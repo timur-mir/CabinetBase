@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cabinetListFragment">
+
+    <fragment
+        android:id="@+id/cabinetListFragment"
+        android:name="home.howework.databaseofcompletedworks.CabinetListFragment"
+        android:label="CabinetListFragment" >
+        <action
+            android:id="@+id/action_cabinetListFragment_to_cabinetDetailFragment"
+            app:destination="@id/cabinetDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cabinetDetailFragment"
+        android:name="home.howework.databaseofcompletedworks.CabinetDetailFragment"
+        android:label="CabinetDetailFragment">
+        <argument
+            android:name="cabinetId"
+            app:argType="java.util.UUID" />
+        <action
+            android:id="@+id/action_cabinetDetailFragment_to_datePickerFragment"
+            app:destination="@id/datePickerFragment" />
+        <action
+            android:id="@+id/action_cabinetDetailFragment_to_cabinetListFragment"
+            app:destination="@id/cabinetListFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/datePickerFragment"
+        android:name="home.howework.databaseofcompletedworks.DatePickerFragment"
+        android:label="DatePickerFragment" >
+        <argument
+            android:name="cabinetDate"
+            app:argType="java.util.Date" />
+    </dialog>
+
+</navigation>

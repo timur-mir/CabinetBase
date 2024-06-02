@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/arhive_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFB3">
+    <TextView
+        android:id="@+id/arhive_head"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:background="#05525357"
+        android:textColor="#111A47"
+        android:text="@string/arhive_mode"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/arhive_recycler_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+</LinearLayout>

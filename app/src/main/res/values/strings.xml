@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">"База выполненных работ 1.1"</string>
+<string name="cabinet_title_hint"> Описание работы</string>
+<string name="cabinet_title_label">Сохраните фото в галерею</string>
+<string name="cabinet_details_label">Дата съёмки </string>
+<string name="cabinet_solved_label">Статус выполнения</string>
+<string name="date_picker_title">Дата выполнения:</string>
+<string name="new_cabinet"> Новый кабинет</string>
+<string name="work_close"> Завершить день</string>
+<string name="delete_cabinet"> Удалить запись:</string>
+<string name="cabinet_suspect_text">Контакты</string>
+<string name="cabinet_report_text">Отправка отчёта</string>
+<string name="image_report">Отправка фото</string>
+<string name="head_title">Введите своё имя:</string>
+<string name="head2_title">Картинка_заголовок</string>
+<string name="enter">Потвердить</string>
+<string name="next">Начать день</string>
+<string name="arhive">Архив</string>
+    <string name="cabinet_photo_button_description">Take photo of cabinet scene</string>
+    <string name="cabinet_photo_no_image_description">
+        Cabinet scene photo (not set)
+    </string>
+    <string name="cabinet_photo_image_description">Cabinet scene photo (set)</string>
+<string name="cabinet_report">%1$s
+                             %2$s %3$s, %4$s
+    </string>
+<string name="cabinet_report_solved">Потверждаю  выполнение работы</string>
+<string name="cabinet_report_unsolved">Работа на стадии выполнения</string>
+<string name="cabinet_report_no_master">работник(и) указан(ы) в отчетном поле.</string>
+<string name="cabinet_report_master">выполнивший работу %s.</string>
+<string name="cabinet_report_subject">Отчёт по работе</string>
+<string name="send_report">Отправка отчёта</string>
+    <string name="date_build">Дата сборки</string>
+    <string name="cabinet_number">Номер кабинета</string>
+    <string name="arhive_mode">Режим архива</string>
+</resources>

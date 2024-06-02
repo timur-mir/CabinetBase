@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cabinet_fragment_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFAC7A"
+    android:orientation="vertical">
+    <!--    android:background="#62F8A0"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFAC7A"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cabinet_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/grey_rounded"
+            android:text="@string/new_cabinet"
+            android:textColor="#FFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/close_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/red_rounded"
+            android:text="@string/work_close"
+            android:textColor="#FFF"  />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cabinet_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    app:cardCornerRadius="12dp"
+    app:strokeColor="#EB501F"
+    app:strokeWidth="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cab_info_layout_new_day_arhive"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#6B7995">
+
+    <LinearLayout
+        android:id="@+id/cabinet_date_layout_arhive"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay1_arhive"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cabinet_title_arhive"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#527593"
+                android:paddingLeft="12dp"
+                android:text="@string/cabinet_number"
+                android:textColor="#E5E0EC"
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2_arhive"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cabinet_date_title_arhive"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingLeft="12dp"
+                android:text="@string/date_build"
+                android:textColor="#FFF200"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/images_layout_arhive"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/del_arhive"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/reset">
+        </ImageButton>
+    </LinearLayout>
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
