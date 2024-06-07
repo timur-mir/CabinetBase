@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/arhive_container"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -13,10 +14,20 @@
         android:gravity="center"
         android:textSize="26sp"
         android:background="#05525357"
-        android:textColor="#111A47"
+        android:textColor="#FF0000"
         android:text="@string/arhive_mode"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/arhive_recycler_view"
-        android:layout_height="wrap_content"
+        android:layout_height="530dp"
         android:layout_width="match_parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send_excel_file"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/grey_rounded"
+
+        android:textColor="#fff"
+        android:text="Отправить таблицу Excel" />
 </LinearLayout>
